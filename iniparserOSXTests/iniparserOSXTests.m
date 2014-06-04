@@ -41,7 +41,7 @@
 
 - (void)testNumberOfSections{
 	
-	XCTAssertEqual([self.iniFile numberOfSections], 1, @"The number of senctions is incorrect.");
+	XCTAssertEqual([self.iniFile numberOfSections], 2, @"The number of senctions is incorrect.");
 
 }
 
@@ -49,6 +49,7 @@
 	
 	XCTAssertEqual([self.iniFile numberOfKeysInSection:@"CORE"], 8, @"The number of keys is incorrect.");
 	XCTAssertThrows([self.iniFile numberOfKeysInSection:@"NOSECTION"], @"It's accepting non existing sections.");
+	XCTAssertEqual([self.iniFile numberOfKeysInSection:@"TEST"], 0,@"It's not returning zero for empty section.");
 	
 }
 
@@ -57,6 +58,7 @@
 	NSArray *sectionNames = [self.iniFile getSectionsName];
 	XCTAssertTrue(sectionNames, @"It's not returning section's names.");
 	XCTAssertEqual(sectionNames[0], @"CORE", "The name of section is wrong.");
+	XCTAssertEqual(sectionNames[0], @"TEST", "The name of section is wrong.");
 	
 }
 
