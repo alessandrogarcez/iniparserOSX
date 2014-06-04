@@ -99,6 +99,7 @@
 	@try {
 		
 		int count = (int)(unsigned const)[self.data count];
+		
 		return count;
 		
 	}@catch (NSException *exception) {
@@ -115,14 +116,22 @@
 		
 		int count;
 		NSDictionary *uniqueSection;
-		uniqueSection = [[NSDictionary alloc] initWithDictionary:[self.data valueForKey:section]];
+		NSDictionary *dictSection;
+		
+		dictSection =[self.data valueForKey:section];
+		
+		if(!dictSection){
+			[NSException raise:@"InvalidSectionException" format:@"Section does not exists."];
+		}
+		
+		uniqueSection = [[NSDictionary alloc] initWithDictionary:dictSection];
 		
 		count = (int)(unsigned long)[uniqueSection count];
 		
 		return count;
 		
 	}@catch (NSException *exception) {
-		
+				
 		[exception raise];
 		
 	}
