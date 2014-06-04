@@ -14,10 +14,21 @@
 @property (strong, nonatomic) NSDictionary *data;
 
 - (id)initWithFile:(NSString *)file;
+
+/**
+ *@description	Get the number of sections of loaded ini file.
+ *@return		int			Number of sections.
+ */
 - (int)numberOfSections;
+
+/**
+ *@description	Get the number of keys in a sections of loaded ini file.
+ *@param		NSString	Name of section to count the number of keys.
+ *@return		int			Number of keys.
+ */
 - (int)numberOfKeysInSection:(NSString *)section;
-- (NSArray *)getSections;
-- (NSArray *)getKeyInSection:(NSString *)section;
+- (NSArray *)getSectionsName;
+- (NSArray *)getKeysInSection:(NSString *)section;
 - (NSString *)getValueForKey:(NSString *)key inSection:(NSString *)section;
 
 @end

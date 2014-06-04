@@ -129,7 +129,7 @@
 	
 };
 
-- (NSArray *)getSections{
+- (NSArray *)getSectionsName{
 
 	@try {
 		
@@ -143,6 +143,7 @@
 		}
 		
 		sections = [[NSArray alloc] initWithArray:arrSections];
+		
 		return sections;
 		
 	}@catch (NSException *exception) {
@@ -153,7 +154,7 @@
 	
 };
 
-- (NSArray *)getKeyInSection:(NSString *)section{
+- (NSArray *)getKeysInSection:(NSString *)section{
 	
 	@try {
 		

@@ -9,16 +9,14 @@
 /* Begin PBXBuildFile section */
 		1637FBF619399942003D6801 /* iniparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 16744C711938F7B2000AD119 /* iniparser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1637FBF719399959003D6801 /* dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 16744C701938F7B2000AD119 /* dictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		163A12C91938FFB000C6F578 /* libiniparser-3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163A12C81938FFB000C6F578 /* libiniparser-3.1.dylib */; };
 		163A12CA1939052700C6F578 /* iniparserOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 16744C4F1938F57E000AD119 /* iniparserOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		163A12CC1939262300C6F578 /* iniparserOSX.ini in Resources */ = {isa = PBXBuildFile; fileRef = 163A12CB1939262300C6F578 /* iniparserOSX.ini */; };
 		16744C431938F57E000AD119 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16744C421938F57E000AD119 /* Cocoa.framework */; };
-		16744C4D1938F57E000AD119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16744C4B1938F57E000AD119 /* InfoPlist.strings */; };
 		16744C511938F57E000AD119 /* iniparserOSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 16744C501938F57E000AD119 /* iniparserOSX.m */; };
 		16744C591938F57E000AD119 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16744C421938F57E000AD119 /* Cocoa.framework */; };
 		16744C5C1938F57E000AD119 /* iniparserOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16744C3F1938F57E000AD119 /* iniparserOSX.framework */; };
-		16744C621938F57E000AD119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16744C601938F57E000AD119 /* InfoPlist.strings */; };
 		16744C641938F57E000AD119 /* iniparserOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16744C631938F57E000AD119 /* iniparserOSXTests.m */; };
+		16DA91E7193E2BCE0063112C /* libiniparser-3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DA91E6193E2BCE0063112C /* libiniparser-3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,21 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		163A12C81938FFB000C6F578 /* libiniparser-3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiniparser-3.1.dylib"; path = "iniparserOSX/libraries/libiniparser-3.1.dylib"; sourceTree = "<group>"; };
 		163A12CB1939262300C6F578 /* iniparserOSX.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iniparserOSX.ini; sourceTree = "<group>"; };
 		16744C3F1938F57E000AD119 /* iniparserOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iniparserOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16744C421938F57E000AD119 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		16744C4A1938F57E000AD119 /* iniparserOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iniparserOSX-Info.plist"; sourceTree = "<group>"; };
-		16744C4C1938F57E000AD119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16744C4E1938F57E000AD119 /* iniparserOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iniparserOSX-Prefix.pch"; sourceTree = "<group>"; };
 		16744C4F1938F57E000AD119 /* iniparserOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iniparserOSX.h; sourceTree = "<group>"; };
 		16744C501938F57E000AD119 /* iniparserOSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iniparserOSX.m; sourceTree = "<group>"; };
 		16744C561938F57E000AD119 /* iniparserOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iniparserOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16744C5F1938F57E000AD119 /* iniparserOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iniparserOSXTests-Info.plist"; sourceTree = "<group>"; };
-		16744C611938F57E000AD119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16744C631938F57E000AD119 /* iniparserOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iniparserOSXTests.m; sourceTree = "<group>"; };
 		16744C701938F7B2000AD119 /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dictionary.h; path = includes/dictionary.h; sourceTree = "<group>"; };
 		16744C711938F7B2000AD119 /* iniparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iniparser.h; path = includes/iniparser.h; sourceTree = "<group>"; };
+		16DA91E6193E2BCE0063112C /* libiniparser-3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiniparser-3.1.dylib"; path = "System/Library/Frameworks/libiniparser-3.1.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163A12C91938FFB000C6F578 /* libiniparser-3.1.dylib in Frameworks */,
+				16DA91E7193E2BCE0063112C /* libiniparser-3.1.dylib in Frameworks */,
 				16744C431938F57E000AD119 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +90,7 @@
 		16744C411938F57E000AD119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				163A12C81938FFB000C6F578 /* libiniparser-3.1.dylib */,
+				16DA91E6193E2BCE0063112C /* libiniparser-3.1.dylib */,
 				16744C421938F57E000AD119 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -115,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				16744C4A1938F57E000AD119 /* iniparserOSX-Info.plist */,
-				16744C4B1938F57E000AD119 /* InfoPlist.strings */,
 				16744C4E1938F57E000AD119 /* iniparserOSX-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -134,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				16744C5F1938F57E000AD119 /* iniparserOSXTests-Info.plist */,
-				16744C601938F57E000AD119 /* InfoPlist.strings */,
 				163A12CB1939262300C6F578 /* iniparserOSX.ini */,
 			);
 			name = "Supporting Files";
@@ -209,11 +203,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alessandro Garcez";
-				TargetAttributes = {
-					16744C551938F57E000AD119 = {
-						TestTargetID = 16744C3E1938F57E000AD119;
-					};
-				};
 			};
 			buildConfigurationList = 16744C391938F57E000AD119 /* Build configuration list for PBXProject "iniparserOSX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -238,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16744C4D1938F57E000AD119 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16744C621938F57E000AD119 /* InfoPlist.strings in Resources */,
 				163A12CC1939262300C6F578 /* iniparserOSX.ini in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,25 +266,6 @@
 			targetProxy = 16744C5A1938F57E000AD119 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		16744C4B1938F57E000AD119 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16744C4C1938F57E000AD119 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		16744C601938F57E000AD119 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16744C611938F57E000AD119 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		16744C651938F57E000AD119 /* Debug */ = {
@@ -384,9 +352,7 @@
 				INFOPLIST_FILE = "iniparserOSX/iniparserOSX-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/alessandrogarcez/work/IOS,
-					Libraries/iniparser,
-					"$(PROJECT_DIR)/iniparserOSX/libraries",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -405,9 +371,7 @@
 				INFOPLIST_FILE = "iniparserOSX/iniparserOSX-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/alessandrogarcez/work/IOS,
-					Libraries/iniparser,
-					"$(PROJECT_DIR)/iniparserOSX/libraries",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -417,7 +381,6 @@
 		16744C6B1938F57E000AD119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iniparserOSX.framework/Versions/A/iniparserOSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -431,7 +394,6 @@
 				);
 				INFOPLIST_FILE = "iniparserOSXTests/iniparserOSXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -439,7 +401,6 @@
 		16744C6C1938F57E000AD119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iniparserOSX.framework/Versions/A/iniparserOSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -449,7 +410,6 @@
 				GCC_PREFIX_HEADER = "iniparserOSX/iniparserOSX-Prefix.pch";
 				INFOPLIST_FILE = "iniparserOSXTests/iniparserOSXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
