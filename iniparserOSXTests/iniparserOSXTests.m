@@ -55,20 +55,18 @@
 
 - (void)testGetSectionsName{
 	
-	NSArray *sectionNames = [self.iniFile getSectionsName];
-	XCTAssertTrue(sectionNames, @"It's not returning section's names.");
-	XCTAssertEqual(sectionNames[0], @"CORE", "The name of section is wrong.");
-	XCTAssertEqual(sectionNames[0], @"TEST", "The name of section is wrong.");
+	XCTAssertTrue([self.iniFile getSectionsName], @"It's not returning section's names.");
+	XCTAssert([[self.iniFile getSectionsName] count] > 0, "The returned number of sention's name is wrong.");
+	XCTAssertEqualObjects([self.iniFile getSectionsName][0], @"CORE", "The name of section is wrong.");
+	XCTAssertEqualObjects([self.iniFile getSectionsName][1], @"TEST", "The name of section is wrong.");
 	
 }
 
 - (void)testGetKeysInSection{
 	
 	XCTAssertThrows([self.iniFile getKeysInSection:@"UNAVAIABLESECTION"], @"It's not returning exception while selected a non existing section.");
-	NSArray *keyNames = [self.iniFile getKeysInSection:@"CORE"];
-	XCTAssertTrue(keyNames, @"It's not returning key's names.");
-	XCTAssertEqual(keyNames[0], @"root_dir", "It's not returning key's names correctly.");
-	XCTAssertEqual(keyNames[7], @"sleeptime", "It's not returning key's names correctly.");
+	XCTAssertTrue([self.iniFile getKeysInSection:@"CORE"], @"It's not returning key's names.");
+	XCTAssertEqual([[self.iniFile getKeysInSection:@"CORE"] count], 8, "It's not returning key's names correctly.");
 	
 }
 

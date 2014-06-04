@@ -142,18 +142,7 @@
 
 	@try {
 		
-		NSArray *sections;
-		NSMutableArray *arrSections;
-		
-		for (NSString *section in self.data) {
-			
-			[arrSections addObject:section];
-			
-		}
-		
-		sections = [[NSArray alloc] initWithArray:arrSections];
-		
-		return sections;
+		return [self.data allKeys];
 		
 	}@catch (NSException *exception) {
 		
@@ -168,19 +157,16 @@
 	@try {
 		
 		NSDictionary *dictSection;
-		NSArray *keys;
-		NSMutableArray *arrKeys;
 		
-		dictSection = [[NSDictionary alloc] initWithDictionary:[self.data objectForKey:section]];
+		dictSection = [self.data valueForKey:section];
 		
-		for (NSString *key in dictSection) {
-			
-			[arrKeys addObject:key];
+		if(!dictSection){
+				
+			[NSException raise:@"InvalidSectionException" format:@"Section does not exists."];
 			
 		}
 		
-		keys = [[NSArray alloc] initWithArray:arrKeys];
-		return keys;
+		return [dictSection allKeys];
 		
 	}@catch (NSException *exception) {
 		
