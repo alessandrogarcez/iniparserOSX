@@ -72,10 +72,10 @@
 
 - (void)testGetValueForKey{
 	
-	XCTAssertThrows([self.iniFile getValueForKey:@"NONEXISTINGKEY" inSection:@"root_dir"], @"It's not returning exception while informing a non existing section.");
-	XCTAssertThrows([self.iniFile getValueForKey:@"CORE" inSection:@"non_existing_key"], @"It's not returning exception while informing a non existing key.");
-	XCTAssertEqual([self.iniFile getValueForKey:@"ROOT" inSection:@"root_dir"], @"It's returnig wrong value.");
-	XCTAssertEqual([self.iniFile getValueForKey:@"ROOT" inSection:@"sleeptime"], @"It's returnig wrong value.");
+	XCTAssertThrows([self.iniFile getValueForKey:@"root_dir" inSection:@"NONEXISTINGKEY"], @"It's not returning exception while informing a non existing section.");
+	XCTAssertThrows([self.iniFile getValueForKey:@"non_existing_key" inSection:@"CORE"], @"It's not returning exception while informing a non existing key.");
+	XCTAssertEqualObjects([self.iniFile getValueForKey:@"root_dir" inSection:@"CORE"], @"./", @"It's returnig wrong value.");
+	XCTAssertEqualObjects([self.iniFile getValueForKey:@"sleeptime" inSection:@"CORE"], @"60", @"It's returnig wrong value.");
 
 }
 

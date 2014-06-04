@@ -183,8 +183,17 @@
 		NSString *value;
 		NSDictionary *dictSection;
 		
-		dictSection = [[NSDictionary alloc] initWithDictionary:[self.data valueForKey:section]];
+		dictSection = [self.data valueForKey:section];
+		
+		if(!dictSection){
+			[NSException raise:@"InvalidSectionException" format:@"Section does not exists."];
+		}
+		
 		value = [dictSection valueForKey:key];
+		
+		if(!value){
+			[NSException raise:@"InvalidKeyException" format:@"Key does not exists."];
+		}
 		
 		return value;
 		
