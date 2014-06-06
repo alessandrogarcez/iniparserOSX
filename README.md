@@ -5,6 +5,7 @@ A ini parser made in Objective-C using iniparser library.
 
 PS: To build this framework, iniparser library is required. More information below:
 * http://blog.alessandrogarcez.com.br/en/porting-iniparser-library-to-osx/
+* https://github.com/ndevilla/iniparser
 * http://ndevilla.free.fr/iniparser/html/
 
 <h2>Building - step by step</h2>
