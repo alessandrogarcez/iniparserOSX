@@ -79,4 +79,12 @@
 
 }
 
+- (void)testGetSectionWithName{
+	
+	XCTAssertThrows([self.iniFile getSectionWithName:@"CORE_INVALID"], @"It's not returning exception while informing a non existing section.");
+	XCTAssertTrue([self.iniFile getSectionWithName:@"CORE"], @"It's returning invalid section");
+	XCTAssertNotEqual([[self.iniFile getSectionWithName:@"CORE"] count], (int)@8, @"It's returning wrong number of itens in section.");
+	
+}
+
 @end

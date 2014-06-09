@@ -54,4 +54,6 @@
  */
 - (NSString *)getValueForKey:(NSString *)key inSection:(NSString *)section;
 
+- (NSDictionary *)getSectionWithName:(NSString *)sectionName;
+
 @end

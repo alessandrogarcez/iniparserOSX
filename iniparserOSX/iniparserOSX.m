@@ -205,4 +205,28 @@
 	
 };
 
+- (NSDictionary *)getSectionWithName:(NSString *)sectionName{
+	
+	@try {
+		
+		NSDictionary *dictRet;
+		
+		dictRet = [self.data valueForKey:sectionName];
+		
+		if(!dictRet){
+			
+			[NSException raise:@"InvalidSectionException" format:@"Section does not exists."];
+			
+		}
+		
+		return dictRet;
+		
+	}@catch (NSException *exception) {
+		
+		[exception raise];
+		 
+	}
+	
+}
+
 @end
