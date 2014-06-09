@@ -13,6 +13,11 @@
 
 @property (strong, nonatomic) NSDictionary *data;
 
+/**
+ *@description	Init method of the object
+ *@param		NSString	The path of file to be read.
+ *@return		id			The initialized object.
+ */
 - (id)initWithFile:(NSString *)file;
 
 /**
