@@ -54,6 +54,11 @@
  */
 - (NSString *)getValueForKey:(NSString *)key inSection:(NSString *)section;
 
+/**
+ *@description	Get all keys in a section
+ *@param		NSString		sectionName		Name of the sections to get the keys.
+ *@return		NSDictionary	Dictionary containing all keys and it's respectives values in a selected section.
+ */
 - (NSDictionary *)getSectionWithName:(NSString *)sectionName;
 
 @end
